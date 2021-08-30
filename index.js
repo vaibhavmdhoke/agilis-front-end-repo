@@ -23,7 +23,7 @@ const port = process.env.PORT || "8000";
  */
 
 app.get("/", (req, res) => {
-  res.status(200).send("Our Resume Details");
+  res.status(200).send("Resume Details");
 });
 
 /**
