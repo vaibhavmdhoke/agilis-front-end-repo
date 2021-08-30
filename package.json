@@ -28,7 +28,8 @@
     "nodemon": "^2.0.12"
   },
   "scripts": {
-    "dev": "nodemon ./index.js"
+    "dev": "nodemon ./index.js",
+    "ui": "browser-sync start --config bs-config.js"
   },
   "repository": {
     "type": "git",
@@ -40,5 +41,12 @@
   "bugs": {
     "url": "https://github.com/vaibhavmdhoke/agilis-front-end-repo/issues"
   },
+
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  },
+
   "homepage": "https://github.com/vaibhavmdhoke/agilis-front-end-repo#readme"
+
 }
