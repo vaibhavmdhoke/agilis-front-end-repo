@@ -1,0 +1,16 @@
+extends layout
+
+block layout-content
+  div.View.UserResume
+    h1.Banner Hi I am #{userProfile.name}
+    div.UserResumeCard
+        div
+            h1 my Resume
+            p College : #{userProfile.college}    
+            p Residence : #{userProfile.residence}
+            p Company : #{userProfile.company}
+            p Role : #{userProfile.role}
+        img(src=userProfile.image).UserResumeImage    
+    div.UserResumeFooter
+        p contact no. : #{userProfile.contactNumber}
+        p email : #{userProfile.emailId}     

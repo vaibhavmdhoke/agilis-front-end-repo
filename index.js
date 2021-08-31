@@ -17,13 +17,52 @@ const port = process.env.PORT || "8000";
 /**
  *  App Configuration
  */
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "pug");
+app.use(express.static(path.join(__dirname, "public")));
 
 /**
  * Routes Definitions
  */
 
 app.get("/", (req, res) => {
-  res.status(200).send("Our Resume Details");
+  res.render("index", { title: "Home" });
+});
+
+app.get("/user", (req, res) => {
+  res.render("user", { title: "Profile", userProfile: { nickname: "Auth0" } });
+});
+
+app.get("/vikas", (req, res) => {
+  res.render("userResume", {
+    title: "Vikas",
+    userProfile: {
+      image: "/vikas-photo.jpg",
+      name: "Vikas",
+      college: "CVR",
+      residence: "Hyderabad",
+      company: "Agilis AS",
+      role: "Front End Engineer",
+      contactNumber: "6300813872",
+      emailId: "msaivikas98@gmail.com",
+    },
+  });
+});
+
+app.get("/rini", (req, res) => {
+  res.render("userResume", {
+    title: "Rini",
+    userProfile: {
+      image: "/rini-photo.jpg",
+      name: "Rini",
+      college: "Karunya",
+      residence: "Trivandrum",
+      company: "Agilis AS",
+      role: "Front End Engineer",
+      contactNumber: "8078904729",
+      emailId: "rini@agilis.no",
+    },
+  });
 });
 
 /**

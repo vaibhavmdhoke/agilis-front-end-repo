@@ -3,16 +3,27 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "nodemon": "^2.0.12"
+  },
   "scripts": {
-    "dev": "nodemon ./index.js"
+    "dev": "nodemon ./index.js",
+    "ui": "browser-sync start --config bs-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaibhavmdhoke/agilis-front-end-repo.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^2.0.12"
+  "bugs": {
+    "url": "https://github.com/vaibhavmdhoke/agilis-front-end-repo/issues"
   },
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "homepage": "https://github.com/vaibhavmdhoke/agilis-front-end-repo#readme"
 }
