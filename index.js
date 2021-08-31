@@ -48,6 +48,7 @@ app.get("/vikas", (req, res) => {
     },
   });
 });
+
 app.get("/karthik", (req, res) => {
   res.render("userResume", {
     title: "Karthik",
@@ -60,7 +61,23 @@ app.get("/karthik", (req, res) => {
       role: "Front End Engineer",
       contactNumber: "9566181750",
       emailId: "vangetikarthik26@gmail.com",
-    },
+     },
+  });
+});
+
+app.get("/rini", (req, res) => {
+  res.render("userResume", {
+    title: "Rini",
+    userProfile: {
+      image: "/rini-photo.jpg",
+      name: "Rini",
+      college: "Karunya",
+      residence: "Trivandrum",
+      company: "Agilis AS",
+      role: "Front End Engineer",
+      contactNumber: "8078904729",
+      emailId: "rini@agilis.no",
+     },
   });
 });
 /**
