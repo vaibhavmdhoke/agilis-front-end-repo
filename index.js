@@ -29,14 +29,40 @@ app.get("/", (req, res) => {
   res.render("index", { title: "Home" });
 });
 
-
 app.get("/user", (req, res) => {
   res.render("user", { title: "Profile", userProfile: { nickname: "Auth0" } });
 });
 
 app.get("/vikas", (req, res) => {
-  res.render("userResume", { title: "Vikas", userProfile: { image:"/vikas-photo.jpg" ,name: "Vikas", college: "CVR", residence: "Hyderabad", company:"Agilis AS", role: "Front End Engineer",
-  contactNumber:"6300813872", emailId:"msaivikas98@gmail.com"} });
+  res.render("userResume", {
+    title: "Vikas",
+    userProfile: {
+      image: "/vikas-photo.jpg",
+      name: "Vikas",
+      college: "CVR",
+      residence: "Hyderabad",
+      company: "Agilis AS",
+      role: "Front End Engineer",
+      contactNumber: "6300813872",
+      emailId: "msaivikas98@gmail.com",
+    },
+  });
+});
+
+app.get("/rini", (req, res) => {
+  res.render("userResume", {
+    title: "Rini",
+    userProfile: {
+      image: "/rini-photo.jpg",
+      name: "Rini",
+      college: "Karunya",
+      residence: "Trivandrum",
+      company: "Agilis AS",
+      role: "Front End Engineer",
+      contactNumber: "8078904729",
+      emailId: "rini@agilis.no",
+    },
+  });
 });
 
 /**
