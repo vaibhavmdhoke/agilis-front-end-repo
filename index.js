@@ -34,6 +34,11 @@ app.get("/user", (req, res) => {
   res.render("user", { title: "Profile", userProfile: { nickname: "Auth0" } });
 });
 
+app.get("/vikas", (req, res) => {
+  res.render("userVikas", { title: "Vikas", userProfile: { name: "Vikas", college: "CVR", residence: "Hyderabad", company:"Agilis AS", role: "Front End Engineer",
+  contactNumber:"6300813872", emailId:"msaivikas98@gmail.com"} });
+});
+
 /**
  * Server Activation
  */

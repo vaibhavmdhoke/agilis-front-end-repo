@@ -1,0 +1,16 @@
+extends layout
+
+block layout-content
+  div.View.UserVikas
+    h1.Banner Hi I am #{userProfile.name}
+    div.UserVikasCard
+        div
+            h1 my Resume
+            p College : #{userProfile.college}    
+            p Residence : #{userProfile.residence}
+            p Company : #{userProfile.company}
+            p Role : #{userProfile.role}
+        img(src="/vikas-photo.jpg").UserVikasImage    
+    div.UserVikasFooter
+        p contact no. : #{userProfile.contactNumber}
+        p email : #{userProfile.emailId}     
