@@ -35,7 +35,7 @@ app.get("/user", (req, res) => {
 });
 
 app.get("/vikas", (req, res) => {
-  res.render("userVikas", { title: "Vikas", userProfile: { name: "Vikas", college: "CVR", residence: "Hyderabad", company:"Agilis AS", role: "Front End Engineer",
+  res.render("userResume", { title: "Vikas", userProfile: { image:"/vikas-photo.jpg" ,name: "Vikas", college: "CVR", residence: "Hyderabad", company:"Agilis AS", role: "Front End Engineer",
   contactNumber:"6300813872", emailId:"msaivikas98@gmail.com"} });
 });
 
